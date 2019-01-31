@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Set root font-size for easy REM measurements.
+ * This measurement relies on the default font size of the browser
+ * to be 16. 62.5% of 16 is 10, which gives us easy rem calculations.
+ */
+html{
+  font-size: 62.5%;
+}
+
+body{
+  padding: 3rem;
+  box-sizing: border-box;
+}
