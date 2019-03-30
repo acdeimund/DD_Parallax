@@ -1,0 +1,57 @@
+#primary-navigation-button{
+  border-color: #98e467;
+
+  &:focus,
+  a:focus{ 
+    outline-color: #a8f477;
+  }
+
+  .form-control:focus{
+    box-shadow: none;
+    border-color: #a8f477;
+  }
+
+  /**** Attributes of the bars. ****/
+  .bar1, .bar2, .bar3 {
+    width: 21px;
+    height: 1px;
+    background-color: #a8f477;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  /**** Changes colors of buttons. ****/
+  .navbar .btn-outline-success {
+    border-color: #a8f477;
+    color: #a8f477;
+
+    &:hover,
+    &:focus {
+      background-color: #a8f477;
+      color: #000;
+    }
+  }
+
+
+  /**** Animation for the hamburger menu. ****/
+  &[aria-expanded="true"]{
+
+    .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-6px, 5px);
+      transform: rotate(-45deg) translate(-6px, 5px);
+    }
+  
+    .bar2 {
+      opacity: 0;
+    }
+  
+    .bar3 {
+      -webkit-transform: rotate(45deg) translate(-5px, -5px);
+      transform: rotate(45deg) translate(-5px, -5px);
+    }
+  }
+
+  .dropdown-menu{
+    transition: all .04s;
+  }
+}

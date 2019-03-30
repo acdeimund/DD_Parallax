@@ -1,19 +1,15 @@
-@import "abstract/functions";
-@import "abstract/mixins";
-@import "abstract/variables";
-
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/button";
-@import "components/card";
-@import "components/composition.scss";
-@import "components/feature-box";
-@import "components/story";
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
 
-@import "layout/grid";
-@import "layout/header";
+@import "components/primary-navigation-button";
 
-@import "pages/home";
+@import "layout/site-header";
+@import "layout/site-footer";
+
+@import "pages/front-page";

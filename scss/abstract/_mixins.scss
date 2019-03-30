@@ -5,8 +5,3 @@
     clear: both;
   }
 }
-
-@mixin col-width($width, $cols){
-  width: calc( ((100% - #{$gutter-horizontal} * (#{$cols} - 1)) / #{$cols})
-  * #{$width} + (#{$gutter-horizontal}) * #{$width} - 1);
-}

@@ -1,0 +1,186 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html,
+body {
+  position: relative; }
+
+/* Set root font-size for easy REM measurements.
+ * This measurement relies on the default font size of the browser
+ * to be 16. 62.5% of 16 is 10, which gives us easy rem calculations.
+ */
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-image: url("https://www.dropbox.com/s/c9ymfrzg0jaxh49/wood-dirt-dirty-grunge-preview.jpg?raw=1");
+  background-repeat: repeat;
+  background-attachment: fixed; }
+
+h1, p {
+  color: white;
+  text-align: center; }
+
+html,
+body {
+  font-family: 'Roboto Condensed', sans-serif; }
+
+.DD-center-text {
+  text-align: center; }
+
+.DD-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.DD-margin-bottom-med {
+  margin-bottom: 4rem; }
+
+.DD-margin-bottom-large {
+  margin-bottom: 8rem; }
+
+.DD-margin-top-small {
+  margin-top: 1.5rem; }
+
+.DD-margin-top-med {
+  margin-top: 4rem; }
+
+.DD-margin-top-large {
+  margin-top: 8rem; }
+
+#primary-navigation-button {
+  border-color: #98e467;
+  /**** Attributes of the bars. ****/
+  /**** Changes colors of buttons. ****/
+  /**** Animation for the hamburger menu. ****/ }
+  #primary-navigation-button:focus,
+  #primary-navigation-button a:focus {
+    outline-color: #a8f477; }
+  #primary-navigation-button .form-control:focus {
+    box-shadow: none;
+    border-color: #a8f477; }
+  #primary-navigation-button .bar1, #primary-navigation-button .bar2, #primary-navigation-button .bar3 {
+    width: 21px;
+    height: 1px;
+    background-color: #a8f477;
+    margin: 6px 0;
+    transition: 0.4s; }
+  #primary-navigation-button .navbar .btn-outline-success {
+    border-color: #a8f477;
+    color: #a8f477; }
+    #primary-navigation-button .navbar .btn-outline-success:hover, #primary-navigation-button .navbar .btn-outline-success:focus {
+      background-color: #a8f477;
+      color: #000; }
+  #primary-navigation-button[aria-expanded="true"] .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 5px);
+    transform: rotate(-45deg) translate(-6px, 5px); }
+  #primary-navigation-button[aria-expanded="true"] .bar2 {
+    opacity: 0; }
+  #primary-navigation-button[aria-expanded="true"] .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px); }
+  #primary-navigation-button .dropdown-menu {
+    transition: all .04s; }
+
+.site-header {
+  z-index: 999;
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0; }
+  .site-header .bg-custom {
+    background-color: black; }
+  .site-header .navbar-dark .navbar-nav .nav-link:hover {
+    color: #98e467; }
+  .site-header .logo {
+    width: 200px; }
+
+.site-footer {
+  min-height: 150px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: -150; }
+
+#front-page .content-header {
+  margin-top: 120px;
+  background-image: url("https://www.dropbox.com/s/234s1omqlmlbttn/Woods.jpg?raw=1");
+  height: 86vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  border-bottom: 5px solid black;
+  text-shadow: 4px 2px 6px black; }
+#front-page .site-title {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 4em;
+  padding-top: 125px; }
+#front-page .tagline {
+  font-size: 1.5em; }
+  #front-page .tagline-condensed {
+    font-size: 2em; }
+#front-page .quick-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 1.25em;
+  transform: translate(-50%, -50%); }
+  #front-page .quick-link:hover {
+    text-decoration: none;
+    color: #a8f477; }
+  #front-page .quick-link-container {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: 1px solid white;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 25px 25px;
+    background-color: rgba(0, 0, 0, 0.5); }
+  #front-page .quick-link-row {
+    width: 100%;
+    text-align: center; }
+#front-page .homepage-section {
+  position: relative; }
+  #front-page .homepage-section-section-img {
+    width: 85%;
+    margin: 15% 5%; }
+  #front-page .homepage-section .text-container {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    z-index: 2;
+    width: 85%;
+    min-height: 65%;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid white; }
+@media (min-width: 768px) {
+  #front-page .homepage-section {
+    position: relative;
+    background-color: transparent;
+    margin: 120px 30px;
+    padding-bottom: 50px;
+    padding-top: 50px; }
+    #front-page .homepage-section-section-img {
+      position: relative;
+      z-index: 1;
+      width: 85%;
+      border: 1px solid black; }
+    #front-page .homepage-section .text-container {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      z-index: 2;
+      width: 85%;
+      min-height: 45%;
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid white; } }
+
+/*# sourceMappingURL=main.css.map */
